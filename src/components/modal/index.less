@@ -1,0 +1,35 @@
+.dialog-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rc-dialog-footer {
+  padding: 15px 20px;
+  font-size: 0.18rem;
+  box-sizing: border-box;
+}
+.dialog-cancel {
+  color: #000;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 60px;
+    right: 0;
+    top: -15px;
+    background: #e9e9e9;
+  }
+}
+.dialog-ok {
+  flex: 1;
+  text-align: center;
+  color: #108ee9;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

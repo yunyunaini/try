@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 import {Route, Switch, HashRouter} from 'react-router-dom'
 import Index from './page/index'
+import Received from './page/received'
 
 // const Index =() => import('./page/index')
 
@@ -12,6 +13,7 @@ const App: React.FC<{}> = () =>  {
   <HashRouter>
     <Switch>
       <Route exact path="/" component={Index}/>
+      <Route exact path="/received" component={Received}/>
     </Switch>
   </HashRouter>
   )
